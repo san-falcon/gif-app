@@ -1,0 +1,15 @@
+<div class="row">
+  <div class="col-12">
+    <!-- Busqueda -->
+    <gifs-search-box></gifs-search-box>
+  </div>
+  <div class="col-12 pt-2">
+    <!-- Listado de gifs -->
+     <!--
+     ? El [gifs] es la propiedad que pasamos al hijo.
+     ? gifs-card-list es un componente hijo.
+     ? En el .ts de gifs-card-list se hizo para que recibiera el parametro con el decorador @Input()
+     -->
+    <gifs-card-list [gifs]="gifs"></gifs-card-list>
+  </div>
+</div>
