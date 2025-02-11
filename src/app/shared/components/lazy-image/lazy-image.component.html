@@ -1,0 +1,8 @@
+<div class="d-fex justify-content-center">
+  <!-- El evento load se activa cuando ya se cargo la imagen -->
+  <img [src]="this.url" (load)="onLoad()" [ngStyle]="{ display: !hasLoaded ? 'none' : ''}" [alt]="this.alt"
+  class="card-img-top animate__animated animate__fadeIn">
+
+  <img *ngIf="!hasLoaded" src="loader.svg"  height="40" width="40"
+    class="mt-3">
+</div>
